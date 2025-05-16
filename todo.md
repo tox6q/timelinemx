@@ -1,20 +1,20 @@
 Soccer Jersey Catalog Development Todo List
 Setup
 
-[ ] Clone GitHub template (React, Shadcn, Tailwind).
-[ ] Initialize project with npm install.
-[ ] Set up React Router for /catalog, /product/:id, /admin.
+[x] Clone GitHub template (React, Shadcn, Tailwind).
+[x] Initialize project with npm install.
+[] Set up React Router for /catalog, /product/:id, /admin.
 
 Supabase Setup
 
-[ ] Create Supabase project.
-[ ] Set up tables: products (id, name, price, description, images), faq (id, question, answer)
-[ ] Enable Storage for product image uploads.
-[ ] Add Supabase client to React app (@supabase/supabase-js).
+[x] Create Supabase project.
+[x] Set up tables: products (id, name, price, description, images), faq (id, question, answer)
+[x] Enable Storage for product image uploads.
+[x] Add Supabase client to React app (@supabase/supabase-js).
 
 Frontend
 
-[ ] Build Header: Catalog, Contact, FAQ links, search bar (client-side filter).
+[ ] Build Header: Catalog, Contact, FAQ 
 [ ] Create Catalog Page: Grid of product cards (image, name, price) from Supabase.
 [ ] Develop Product Page: Display photos, price, description.
 [ ] Style with Tailwind; use Shadcn for components (cards, forms, tables).
