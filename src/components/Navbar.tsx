@@ -3,6 +3,7 @@
 import * as React from "react"
 import { useState } from "react"
 import { Menu, X } from "lucide-react"
+import Image from "next/image"
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -19,16 +20,14 @@ const Navbar = () => {
           background: 'linear-gradient(white, white) padding-box, linear-gradient(to right, #FF9966, #FF5E62) border-box'
         }}>
         <div className="flex items-center">
-          <div className="w-8 h-8 mr-6">
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="16" cy="16" r="16" fill="url(#paint0_linear)" />
-              <defs>
-                <linearGradient id="paint0_linear" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
-                  <stop stopColor="#FF9966" />
-                  <stop offset="1" stopColor="#FF5E62" />
-                </linearGradient>
-              </defs>
-            </svg>
+          <div className="w-10 h-10 mr-6 relative overflow-hidden rounded-full">
+            <Image 
+              src="/assets/logo.jpg" 
+              alt="Logo" 
+              width={40} 
+              height={40}
+              className="object-cover"
+            />
           </div>
         </div>
         
